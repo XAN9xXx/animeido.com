@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AniMeido - 追番补番记录本</title>
+  <meta name="description" content="AniMeido - 简洁的本地动漫追番管理应用" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="icon" href="./assets/images/IconLast.png" />
+</head>
+<body>
+
+  <nav class="page-dots" aria-label="页面切换">
+    <button class="dot is-active" type="button" data-target="home"></button>
+    <button class="dot" type="button" data-target="features"></button>
+    <button class="dot" type="button" data-target="changelog"></button>
+  </nav>
+
+  <main class="snap-container" id="pages">
+
+    <!-- Page 1: Hero -->
+    <section class="page page-hero" id="home">
+      <div class="hero-inner">
+        <figure class="app-shot reveal-left">
+          <img src="./assets/images/page1-screenshot.png" alt="AniMeido 应用截图" />
+        </figure>
+
+        <div class="hero-copy reveal-fade">
+          <h1>AniMeido</h1>
+          <p class="hero-desc">专为动漫爱好者打造的本地桌面应用，<br />发现、追踪和管理你喜爱的番剧。</p>
+          <div class="hero-actions">
+            <a href="https://github.com/XAN9xXx/AniMeido/releases" target="_blank" class="btn btn-primary"><span class="btn-icon">&#9655;</span> 下载 Windows 版</a>
+            <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> GitHub 仓库</a>
+          </div>
+        </div>
+      </div>
+
+      <img class="hero-mascot reveal-right" src="./assets/images/page1-mascot.png" alt="看板娘" />
+    </section>
+
+    <!-- Page 2: Features -->
+    <section class="page page-features" id="features">
+      <div class="feature-character-wrap">
+        <div class="feature-character-bg"></div>
+        <img class="feature-character" src="./assets/images/page2-mascot.png" alt="看板娘" />
+      </div>
+
+      <div class="feature-content reveal-fade">
+        <p class="eyebrow">ANIMEIDO</p>
+        <h2>功能一览</h2>
+
+        <div class="feature-list">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <div>
+              <h3>正在放送</h3>
+              <p>浏览当前季度新番，按星期分组，自动跳转至今天。</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <div>
+              <h3>补番计划</h3>
+              <p>按年份与季度筛选往季番剧，快速定位想补的老番。</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <div>
+              <h3>番剧详情</h3>
+              <p>番剧信息完整展示，一键跳转 Bangumi 百科。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 3: Changelog -->
+    <section class="page page-log" id="changelog">
+      <img class="log-bg reveal-fade" src="./assets/images/page3-bg.png" alt="" />
+
+      <div class="log-layout reveal-fade">
+        <div class="log-heading">
+          <p class="eyebrow">UPDATES</p>
+          <h2>更新日志</h2>
+        </div>
+
+        <div class="log-scroll" tabindex="0">
+          <article class="release-card">
+            <div class="release-head">
+              <h3>v1.0.0</h3>
+              <time>2026-05-20</time>
+            </div>
+            <ul>
+              <li>番剧浏览+详情+设置</li>
+            </ul>
+          </article>
+          <article class="release-card">
+            <div class="release-head">
+              <h3>v1.1.0</h3>
+              <time>开发中</time>
+            </div>
+            <ul>
+              <li>加入关注系统，可对番剧标记追番/补番/不感兴趣</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 XAN9x &middot; GPL v3.0 &middot; Made with <span class="heart">&hearts;</span>
+  </footer>
+
+  <script src="./src/js/main.js"></script>
+</body>
+</html>
