@@ -98,6 +98,13 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   line-height: 1.9;
 }
 
+.hero-note {
+  margin: 12px 0 0;
+  color: var(--muted-2);
+  font-size: clamp(12px, 0.9vw, 14px);
+  line-height: 1.7;
+}
+
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
 
 .btn {
@@ -131,7 +138,7 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
 /* 看板娘 — 固定在各自页面内 */
 .hero-mascot {
   position: absolute;
-  right: clamp(-6vw, -1vw, 40px);
+  right: clamp(2vw, -1vw, 40px);
   bottom: 0;
   height: 94vh;
   z-index: 3;
