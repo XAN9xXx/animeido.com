@@ -354,7 +354,43 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   transition: height .22s ease, background .22s ease;
 }
 .dot.is-active { height: 28px; background: var(--blue); }
+/* ======== Language Switcher ======== */
+.lang-switcher {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 30;
+  padding: 7px 16px;
+  border: 1px solid rgba(160,195,255,0.2);
+  border-radius: 99px;
+  background: rgba(7, 16, 31, 0.82);
+  backdrop-filter: blur(8px);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all .25s ease;
+  line-height: 1.4;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.lang-switcher:hover {
+  background: rgba(47,125,255,0.2);
+  border-color: var(--blue-2);
+  color: var(--text);
+  box-shadow: 0 4px 24px rgba(47,125,255,0.18);
+}
 
+/* ======== Hero Language Note ======== */
+.hero-lang-note {
+  margin-top: 16px !important;
+  padding: 10px 14px;
+  border: 1px solid rgba(102,167,255,0.15);
+  border-radius: 10px;
+  background: rgba(47,125,255,0.06);
+  font-size: clamp(11px, 0.8vw, 13px);
+}
 /* ======== Footer ======== */
 .site-footer { display: none; }
 
