@@ -31,7 +31,13 @@
           <p class="hero-note">问题反馈：QQ 3223271148</p>
           <p class="hero-note">由于 CloudFlare 在国内服务不稳定，下载速度可能较慢。<br />推荐复制下载链接并使用 Motrix 等工具加速下载。</p>
           <div class="hero-actions">
-            <a href="https://dl.animeido.com/AniMeido_setup.exe" target="_blank" class="btn btn-primary"><span class="btn-icon">&#9655;</span> 下载 Windows 版</a>
+            <div class="dropdown-wrapper">
+              <button class="btn btn-primary dropdown-trigger" onclick="this.nextElementSibling.classList.toggle('is-open')"><span class="btn-icon">&#9655;</span> 下载 Windows 版 <span class="dropdown-arrow">&#9660;</span></button>
+              <div class="dropdown-menu">
+                <a href="https://dl.animeido.com/AniMeido_setup_Full.exe" target="_blank" class="dropdown-item">包含运行环境（推荐）<span class="dropdown-desc">.NET 8 + WindowAppRuntime 2.0.1+ 应用本身，约 200 MB</span></a>
+                <a href="https://dl.animeido.com/AniMeido_setup_Lite.exe" target="_blank" class="dropdown-item">不含运行环境<span class="dropdown-desc">仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1</span></a>
+              </div>
+            </div>
             <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> GitHub 仓库</a>
           </div>
         </div>

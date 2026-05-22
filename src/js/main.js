@@ -33,3 +33,12 @@ if (logScroll) {
     if ((up && !atTop) || (down && !atBottom)) event.stopPropagation();
   });
 }
+
+// 下载下拉菜单 — 点击外部关闭
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.dropdown-menu.is-open').forEach(menu => {
+    if (!menu.parentElement.contains(e.target)) {
+      menu.classList.remove('is-open');
+    }
+  });
+});

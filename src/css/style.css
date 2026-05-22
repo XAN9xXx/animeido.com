@@ -126,6 +126,68 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   box-shadow: 0 16px 40px rgba(47, 125, 255, 0.24);
 }
 
+/* ======== 下载下拉菜单 ======== */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+  transition: transform .2s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: none;
+  flex-direction: column;
+  border: 1px solid rgba(160, 195, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(8, 14, 28, 0.96);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu.is-open {
+  display: flex;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  transition: background .15s ease;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: rgba(47, 125, 255, 0.12);
+}
+
+.dropdown-item + .dropdown-item {
+  border-top: 1px solid rgba(160, 195, 255, 0.1);
+}
+
+.dropdown-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted-2);
+}
+
 .btn-secondary {
   border: 1px solid rgba(210, 225, 255, 0.16);
   background: rgba(255, 255, 255, 0.035);
