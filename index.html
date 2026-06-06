@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <button class="lang-switcher" type="button" title="Switch Language" onclick="toggleLanguage()">EN</button>
+  <button class="lang-switcher" type="button" title="Switch Language">EN</button>
 
   <nav class="page-dots" aria-label="页面切换">
     <button class="dot is-active" type="button" data-target="home"></button>
@@ -24,7 +24,7 @@
     <section class="page page-hero" id="home">
       <div class="hero-inner">
         <figure class="app-shot reveal-left">
-          <img src="./assets/images/page1-screenshot.png" alt="AniMeido 应用截图" />
+          <img src="./assets/images/page1-screenshot.png" alt="AniMeido 应用截图" data-i18n-alt="altScreenshot" />
         </figure>
 
         <div class="hero-copy reveal-fade">
@@ -37,8 +37,8 @@
             <div class="dropdown-wrapper">
               <button class="btn btn-primary dropdown-trigger" onclick="this.nextElementSibling.classList.toggle('is-open')"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载 Windows 版</span> <span class="dropdown-arrow">&#9660;</span></button>
               <div class="dropdown-menu">
-                <a href="https://dl.animeido.com/AniMeido_setup_Full.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc" data-i18n="downloadFullDesc">.NET 8 + WindowAppRuntime 2.0.1+ 应用本身，约 200 MB</span></a>
-                <a href="https://dl.animeido.com/AniMeido_setup_Lite.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc" data-i18n="downloadLiteDesc">仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1</span></a>
+                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Full.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc" data-i18n="downloadFullDesc">.NET 8 + WindowAppRuntime 2.0.1+ 应用本身，约 200 MB</span></a>
+                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Lite.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc" data-i18n="downloadLiteDesc">仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1</span></a>
               </div>
             </div>
             <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
@@ -64,22 +64,15 @@
           <article class="feature-card">
             <div class="feature-icon">01</div>
             <div>
-              <h3 data-i18n="feature1Title">正在放送</h3>
-              <p data-i18n="feature1Desc">浏览当前季度新番，按星期分组，自动跳转至今天。</p>
+              <h3 data-i18n="feature1Title">番剧浏览</h3>
+              <p data-i18n="feature1Desc">浏览当前季度新番，按星期分组查看放送计划；按年份与季度筛选往季番剧，快速定位想补的老番。</p>
             </div>
           </article>
           <article class="feature-card">
             <div class="feature-icon">02</div>
             <div>
-              <h3 data-i18n="feature2Title">补番计划</h3>
-              <p data-i18n="feature2Desc">按年份与季度筛选往季番剧，快速定位想补的老番。</p>
-            </div>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">03</div>
-            <div>
-              <h3 data-i18n="feature3Title">番剧详情</h3>
-              <p data-i18n="feature3Desc">番剧信息完整展示，一键跳转 Bangumi 百科。</p>
+              <h3 data-i18n="feature2Title">关注管理</h3>
+              <p data-i18n="feature2Desc">支持追番、补番、不感兴趣等多种状态，帮助你整理自己的番剧列表与观看计划。</p>
             </div>
           </article>
         </div>
@@ -100,11 +93,13 @@
           <article class="release-card">
             <div class="release-head">
               <h3 data-i18n="v110">v1.1.0</h3>
-              <time data-i18n="v110Date">开发中</time>
+              <p data-i18n="v110Date">2026-06-06</p>
+              <ul>
+                <li data-i18n="v110Item1">新增关注管理页面，支持追番、补番、不感兴趣、关注、已看完、弃番、屏蔽等多种状态</li>
+                <li data-i18n="v110Item2">新增全局搜索、Tag 管理、浏览历史与数据管理相关功能</li>
+                <li data-i18n="v110Item3">优化浅色主题适配</li>
+              </ul>
             </div>
-            <ul>
-              <li data-i18n="v110Desc">加入关注系统，可对番剧标记追番/补番/不感兴趣</li>
-            </ul>
           </article>
           <article class="release-card">
             <div class="release-head">

@@ -24,6 +24,9 @@ dots.forEach(dot => {
   });
 });
 
+// 语言切换按钮
+document.querySelector('.lang-switcher')?.addEventListener('click', toggleLanguage);
+
 if (logScroll) {
   logScroll.addEventListener('wheel', (event) => {
     const atTop = logScroll.scrollTop <= 0;
