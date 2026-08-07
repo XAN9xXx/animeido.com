@@ -6,16 +6,16 @@
   <title>AniMeido - 追番补番记录本</title>
   <meta name="description" content="AniMeido - 简洁的本地动漫追番管理应用" />
   <link rel="stylesheet" href="./src/css/style.css" />
-  <link rel="icon" href="./assets/images/IconLast.png" />
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
 </head>
 <body>
 
-  <button class="lang-switcher" type="button" title="Switch Language">EN</button>
+  <button class="lang-switcher" type="button" title="切换语言" aria-label="切换语言" data-i18n-title="languageSwitcherLabel" data-i18n-aria-label="languageSwitcherLabel">EN</button>
 
-  <nav class="page-dots" aria-label="页面切换">
-    <button class="dot is-active" type="button" data-target="home"></button>
-    <button class="dot" type="button" data-target="features"></button>
-    <button class="dot" type="button" data-target="changelog"></button>
+  <nav class="page-dots" aria-label="页面切换" data-i18n-aria-label="pageNavigationLabel">
+    <button class="dot is-active" type="button" data-target="home" aria-label="首页" data-i18n-aria-label="pageHomeLabel"></button>
+    <button class="dot" type="button" data-target="features" aria-label="功能一览" data-i18n-aria-label="pageFeaturesLabel"></button>
+    <button class="dot" type="button" data-target="changelog" aria-label="更新日志" data-i18n-aria-label="pageChangelogLabel"></button>
   </nav>
 
   <main class="snap-container" id="pages">
@@ -24,7 +24,7 @@
     <section class="page page-hero" id="home">
       <div class="hero-inner">
         <figure class="app-shot reveal-left">
-          <img src="./assets/images/page1-screenshot.png" alt="AniMeido 应用截图" data-i18n-alt="altScreenshot" />
+          <img src="./assets/images/page1-screenshot.webp" alt="AniMeido 应用截图" data-i18n-alt="altScreenshot" />
         </figure>
 
         <div class="hero-copy reveal-fade">
@@ -35,25 +35,25 @@
           <p class="hero-note hero-lang-note" data-i18n-html="heroLangNote"></p>
           <div class="hero-actions">
             <div class="dropdown-wrapper">
-              <button class="btn btn-primary dropdown-trigger" onclick="this.nextElementSibling.classList.toggle('is-open')"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载 Windows 版</span> <span class="dropdown-arrow">&#9660;</span></button>
-              <div class="dropdown-menu">
-                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Full.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc" data-i18n="downloadFullDesc">.NET 8 + WindowAppRuntime 2.0.1+ 应用本身，约 200 MB</span></a>
-                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Lite.exe" target="_blank" class="dropdown-item"><span data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc" data-i18n="downloadLiteDesc">仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1</span></a>
+              <button class="btn btn-primary dropdown-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="download-menu"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载 Windows 版</span> <span class="dropdown-arrow" aria-hidden="true">&#9660;</span></button>
+              <div class="dropdown-menu" id="download-menu" role="menu">
+                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Full.exe" target="_blank" rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc" data-i18n="downloadFullDesc">.NET 8 + WindowAppRuntime 2.0.1+ 应用本身，约 200 MB</span></a>
+                <a href="https://dl.animeido.com/AniMeidov1.1.0_setup_Lite.exe" target="_blank" rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc" data-i18n="downloadLiteDesc">仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1</span></a>
               </div>
             </div>
-            <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
+            <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
           </div>
         </div>
       </div>
 
-          <img class="hero-mascot reveal-right" src="./assets/images/page1-mascot.png" data-i18n-alt="altMascot" alt="看板娘" />
+          <img class="hero-mascot reveal-right" src="./assets/images/page1-mascot.webp" data-i18n-alt="altMascot" alt="看板娘" />
     </section>
 
     <!-- Page 2: Features -->
     <section class="page page-features" id="features">
       <div class="feature-character-wrap">
         <div class="feature-character-bg"></div>
-        <img class="feature-character" src="./assets/images/page2-mascot.png" data-i18n-alt="altMascot2" alt="看板娘" />
+        <img class="feature-character" src="./assets/images/page2-mascot.webp" data-i18n-alt="altMascot2" alt="看板娘" />
       </div>
 
       <div class="feature-content reveal-fade">
@@ -81,7 +81,7 @@
 
     <!-- Page 3: Changelog -->
     <section class="page page-log" id="changelog">
-      <img class="log-bg reveal-fade" src="./assets/images/page3-bg.png" alt="" />
+      <img class="log-bg reveal-fade" src="./assets/images/page3-bg.webp" alt="" />
 
       <div class="log-layout reveal-fade">
         <div class="log-heading">
@@ -93,7 +93,7 @@
           <article class="release-card">
             <div class="release-head">
               <h3 data-i18n="v110">v1.1.0</h3>
-              <p data-i18n="v110Date">2026-06-06</p>
+              <time datetime="2026-06-06" data-i18n="v110Date">2026-06-06</time>
               <ul>
                 <li data-i18n="v110Item1">新增关注管理页面，支持追番、补番、不感兴趣、关注、已看完、弃番、屏蔽等多种状态</li>
                 <li data-i18n="v110Item2">新增全局搜索、Tag 管理、浏览历史与数据管理相关功能</li>
@@ -121,6 +121,7 @@
           </article>
         </div>
       </div>
+    </section>
   </main>
 
   <footer class="site-footer">

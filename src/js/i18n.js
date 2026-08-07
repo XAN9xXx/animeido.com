@@ -22,6 +22,11 @@ const translations = {
     downloadLiteDesc: '仅应用，约 40 MB，需自行安装 .NET 8 + WindowsAppRuntime 2.0.1',
     githubBtn: 'GitHub 仓库',
     altScreenshot: 'AniMeido 应用截图',
+    languageSwitcherLabel: '切换语言',
+    pageNavigationLabel: '页面切换',
+    pageHomeLabel: '首页',
+    pageFeaturesLabel: '功能一览',
+    pageChangelogLabel: '更新日志',
 
     featuresEyebrow: 'ANIMEIDO',
     featuresTitle: '功能一览',
@@ -64,6 +69,11 @@ const translations = {
     downloadLiteDesc: 'App only, ~40 MB. Requires .NET 8 + WindowsAppRuntime 2.0.1',
     githubBtn: 'GitHub Repo',
     altScreenshot: 'AniMeido App Screenshot',
+    languageSwitcherLabel: 'Switch language',
+    pageNavigationLabel: 'Page navigation',
+    pageHomeLabel: 'Home',
+    pageFeaturesLabel: 'Features',
+    pageChangelogLabel: 'Changelog',
 
     featuresEyebrow: 'ANIMEIDO',
     featuresTitle: 'Features',
@@ -148,6 +158,16 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n-alt]').forEach(el => {
     const key = el.dataset.i18nAlt;
     if (t[key] !== undefined) el.alt = t[key];
+  });
+
+  // [data-i18n-aria-label] / [data-i18n-title] — accessible labels
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+    const key = el.dataset.i18nAriaLabel;
+    if (t[key] !== undefined) el.setAttribute('aria-label', t[key]);
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.dataset.i18nTitle;
+    if (t[key] !== undefined) el.setAttribute('title', t[key]);
   });
 
   // 语言切换按钮本身
