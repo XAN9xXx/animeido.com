@@ -18,9 +18,19 @@ const observer = new IntersectionObserver((entries) => {
 pages.forEach(p => observer.observe(p));
 setActivePage('home');
 
+const initialPage = document.getElementById(window.location.hash.slice(1));
+if (initialPage?.classList.contains('page')) {
+  requestAnimationFrame(() => {
+    scroller.scrollTo({ top: initialPage.offsetTop, behavior: 'auto' });
+    setActivePage(initialPage.id);
+  });
+}
+
 dots.forEach(dot => {
   dot.addEventListener('click', () => {
-    document.getElementById(dot.dataset.target)?.scrollIntoView({ behavior: 'smooth' });
+    const target = document.getElementById(dot.dataset.target);
+    target?.scrollIntoView({ behavior: 'smooth' });
+    if (target) history.replaceState(null, '', `#${target.id}`);
   });
 });
 

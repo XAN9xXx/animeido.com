@@ -1,6 +1,6 @@
 {
-    "latestVersion": "1.1.0",
-    "downloadUrl": "https://dl.animeido.com/AniMeidov1.1.0_setup_Lite.exe",
-    "releaseNotes": "AniMeido v1.1.0 更新内容\n\n- 支持追番、补番、不感兴趣、关注等番剧状态的一键标记。\n- 从番剧卡片拖放到指定区域即可快速标记状态。\n- 支持按标签搜索和管理番剧，详情页新增评分、制作公司、角色与声优信息。\n- 新增全局搜索功能，快速查找任意番剧。\n- 新增屏蔽功能，隐藏不想看到的番剧。\n- 新增数据备份、导入与导出功能，数据更安全。\n- 优化本地数据缓存和图片缓存，部分页面加载和浏览体验更流畅。\n- 优化当前季番、往季番页面的搜索与筛选体验。\n- 修复部分页面状态显示和交互问题。",
+    "latestVersion": "2.0.0",
+    "downloadUrl": "https://dl.animeido.com/AniMeidov2.0.0_setup_Lite.exe",
+    "releaseNotes": "AniMeido v2.0.0 更新内容\n\n- 新增今天页、观看进度、补番计划与 Windows 原生提醒。\n- 新增个人动画档案馆、感想、统计、年度回顾与全局截图管理。\n- 新增本地可解释动画推荐。\n- 完善可安装插件系统，可选插件在独立 PluginHost 进程运行。",
     "minAppVersion": "1.0.0"
 }
