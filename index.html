@@ -1,22 +1,29 @@
 <!doctype html>
 <html lang="zh-CN" class="lang-zh-CN">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AniMeido - 个人动画行动中心</title>
+  <title>AniMeido</title>
   <meta name="description" content="AniMeido - 集放送日历、补番计划、个人档案与本地推荐于一体的 Windows 动画管理应用" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
 </head>
+
 <body>
 
-  <button class="lang-switcher" type="button" title="切换语言" aria-label="切换语言" data-i18n-title="languageSwitcherLabel" data-i18n-aria-label="languageSwitcherLabel">EN</button>
+  <button class="lang-switcher" type="button" title="切换语言" aria-label="切换语言" data-i18n-title="languageSwitcherLabel"
+    data-i18n-aria-label="languageSwitcherLabel">EN</button>
 
   <nav class="page-dots" aria-label="页面切换" data-i18n-aria-label="pageNavigationLabel">
-    <button class="dot is-active" type="button" data-target="home" aria-label="首页" data-i18n-aria-label="pageHomeLabel"></button>
-    <button class="dot" type="button" data-target="features" aria-label="功能一览" data-i18n-aria-label="pageFeaturesLabel"></button>
-    <button class="dot" type="button" data-target="plugins" aria-label="插件下载" data-i18n-aria-label="pagePluginsLabel"></button>
-    <button class="dot" type="button" data-target="changelog" aria-label="更新日志" data-i18n-aria-label="pageChangelogLabel"></button>
+    <button class="dot is-active" type="button" data-target="home" aria-label="首页"
+      data-i18n-aria-label="pageHomeLabel"></button>
+    <button class="dot" type="button" data-target="features" aria-label="功能一览"
+      data-i18n-aria-label="pageFeaturesLabel"></button>
+    <button class="dot" type="button" data-target="plugins" aria-label="插件下载"
+      data-i18n-aria-label="pagePluginsLabel"></button>
+    <button class="dot" type="button" data-target="changelog" aria-label="更新日志"
+      data-i18n-aria-label="pageChangelogLabel"></button>
   </nav>
 
   <main class="snap-container" id="pages">
@@ -30,24 +37,36 @@
 
         <div class="hero-copy reveal-fade">
           <h1>AniMeido</h1>
-          <p class="hero-desc" data-i18n-html="heroDesc">从放送日历到个人档案，<br />在本地规划、记录并回顾你的动画生活。</p>
+          <p class="hero-desc" data-i18n-html="heroDesc">从放送日历到个人档案，<br />在本地记录并回顾你的动画生活。</p>
           <p class="hero-note" data-i18n="heroFeedback">问题反馈：QQ 3223271148</p>
-          <p class="hero-note" data-i18n-html="heroNoteCF">由于 CloudFlare 在国内服务不稳定，下载速度可能较慢。<br />推荐复制下载链接并使用 Motrix 等工具加速下载。</p>
+          <p class="hero-note" data-i18n-html="heroNoteCF">由于 CloudFlare 在国内服务不稳定，下载速度可能较慢。<br />推荐复制下载链接并使用 Motrix
+            等工具加速下载。</p>
           <p class="hero-note hero-lang-note" data-i18n-html="heroLangNote"></p>
           <div class="hero-actions">
             <div class="dropdown-wrapper">
-              <button class="btn btn-primary dropdown-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="download-menu"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载 Windows 版</span> <span class="dropdown-arrow" aria-hidden="true">&#9660;</span></button>
+              <button class="btn btn-primary dropdown-trigger" type="button" aria-haspopup="menu" aria-expanded="false"
+                aria-controls="download-menu"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载
+                  Windows 版</span> <span class="dropdown-arrow" aria-hidden="true">&#9660;</span></button>
               <div class="dropdown-menu" id="download-menu" role="menu">
-                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Full.exe" target="_blank" rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc" data-i18n="downloadFullDesc">包含 .NET 8 与 Windows App Runtime，适合直接安装</span></a>
-                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Lite.exe" target="_blank" rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc" data-i18n="downloadLiteDesc">仅包含应用，需自行准备 .NET 8 与 Windows App Runtime</span></a>
+                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Full.exe" target="_blank"
+                  rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
+                    data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc"
+                    data-i18n="downloadFullDesc">包含 .NET 8 与 Windows App Runtime，适合直接安装</span></a>
+                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Lite.exe" target="_blank"
+                  rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
+                    data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc"
+                    data-i18n="downloadLiteDesc">仅包含应用，需自行准备 .NET 8 与 Windows App Runtime</span></a>
               </div>
             </div>
-            <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt="" class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
+            <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt=""
+                class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
           </div>
         </div>
       </div>
 
-          <img class="hero-mascot reveal-right" src="./assets/images/page1-mascot.webp" data-i18n-alt="altMascot" alt="看板娘" />
+      <img class="hero-mascot reveal-right" src="./assets/images/page1-mascot.webp" data-i18n-alt="altMascot"
+        alt="看板娘" />
     </section>
 
     <!-- Page 2: Features -->
@@ -66,7 +85,7 @@
             <div class="feature-icon">01</div>
             <div>
               <h3 data-i18n="feature1Title">放送日历与番剧库</h3>
-              <p data-i18n="feature1Desc">按星期浏览当前季放送，按年份和季度探索往季作品，并通过搜索、Tag 与人物快速定位番剧。</p>
+              <p data-i18n="feature1Desc">按星期浏览当前季放送，按年份和季度探索往季作品。</p>
             </div>
           </article>
           <article class="feature-card">
@@ -86,7 +105,7 @@
           <article class="feature-card">
             <div class="feature-icon">04</div>
             <div>
-              <h3 data-i18n="feature4Title">本地可解释推荐</h3>
+              <h3 data-i18n="feature4Title">本地推荐</h3>
               <p data-i18n="feature4Desc">根据本地追番、评分和收藏 Tag 生成推荐，展示具体依据，并允许随时纠正偏好。</p>
             </div>
           </article>
@@ -112,12 +131,14 @@
                 <p>PlayerPlugin 0.4.6</p>
               </div>
             </div>
-            <p class="plugin-description" data-i18n="playerPluginDesc">提供在线剧集播放、libmpv 播放体验和用户导入的播放源管理。</p>
+            <p class="plugin-description" data-i18n="playerPluginDesc">提供在线剧集播放和用户导入的播放源管理。</p>
             <div class="plugin-meta">
               <span data-i18n="playerPluginRequirement">需要 AniMeido 1.6.0+</span>
               <span data-i18n="playerPluginSize">约 46 MB</span>
             </div>
-            <a class="btn btn-primary plugin-download" href="https://dl.animeido.com/AniMeido.Plugin.Player-0.4.6.animeido-plugin" target="_blank" rel="noopener noreferrer" data-i18n="pluginDownload">下载插件包</a>
+            <a class="btn btn-primary plugin-download"
+              href="https://dl.animeido.com/AniMeido.Plugin.Player-0.4.6.animeido-plugin" target="_blank"
+              rel="noopener noreferrer" data-i18n="pluginDownload">下载插件包</a>
           </article>
 
           <article class="plugin-card">
@@ -128,13 +149,15 @@
                 <p>AIPlugin 0.2.6</p>
               </div>
             </div>
-            <p class="plugin-description" data-i18n="aiPluginDesc">提供会话式动画助手、发送前数据授权预览和需确认的结构化变更提案。</p>
+            <p class="plugin-description" data-i18n="aiPluginDesc">接入AI，提供会话式动画助手。</p>
             <div class="plugin-meta">
               <span data-i18n="aiPluginRequirement">需要 AniMeido 1.7.0+</span>
               <span data-i18n="aiPluginSize">约 1.2 MB</span>
             </div>
             <p class="plugin-caution" data-i18n="aiPluginCaution">需要用户自行配置受支持的 AI Provider 与 API Key。</p>
-            <a class="btn btn-primary plugin-download" href="https://dl.animeido.com/AniMeido.Plugin.AI-0.2.6.animeido-plugin" target="_blank" rel="noopener noreferrer" data-i18n="pluginDownload">下载插件包</a>
+            <a class="btn btn-primary plugin-download"
+              href="https://dl.animeido.com/AniMeido.Plugin.AI-0.2.6.animeido-plugin" target="_blank"
+              rel="noopener noreferrer" data-i18n="pluginDownload">下载插件包</a>
           </article>
         </div>
       </div>
@@ -159,8 +182,8 @@
             <ul>
               <li data-i18n="v200Item1">新增今天页、观看进度、补番计划与 Windows 原生提醒</li>
               <li data-i18n="v200Item2">新增个人动画档案馆、感想、统计、年度回顾与全局截图管理</li>
-              <li data-i18n="v200Item3">新增本地可解释动画推荐</li>
-              <li data-i18n="v200Item4">完善可安装插件系统，可选插件在独立 PluginHost 进程运行</li>
+              <li data-i18n="v200Item3">新增本地动画推荐</li>
+              <li data-i18n="v200Item4">完善可安装插件系统</li>
             </ul>
           </article>
           <article class="release-card">
@@ -204,4 +227,5 @@
   <script src="./src/js/i18n.js"></script>
   <script src="./src/js/main.js"></script>
 </body>
+
 </html>
