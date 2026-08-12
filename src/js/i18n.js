@@ -49,11 +49,6 @@ const translations = {
     playerPluginDesc: '提供在线剧集播放、libmpv 播放体验和用户导入的播放源管理。',
     playerPluginRequirement: '需要 AniMeido 1.6.0+',
     playerPluginSize: '约 46 MB',
-    aiPluginTitle: 'AI 工作台',
-    aiPluginDesc: '提供会话式动画助手、发送前数据授权预览和需确认的结构化变更提案。',
-    aiPluginRequirement: '需要 AniMeido 1.7.0+',
-    aiPluginSize: '约 1.2 MB',
-    aiPluginCaution: '需要用户自行配置受支持的 AI Provider 与 API Key。',
     pluginDownload: '下载插件包',
 
     logEyebrow: 'UPDATES',
@@ -121,11 +116,6 @@ const translations = {
     playerPluginDesc: 'Adds online episode playback, a libmpv playback experience, and management for user-imported playback sources.',
     playerPluginRequirement: 'Requires AniMeido 1.6.0+',
     playerPluginSize: 'About 46 MB',
-    aiPluginTitle: 'AI Workbench',
-    aiPluginDesc: 'Adds a conversational anime assistant, pre-send data authorization previews, and structured changes that require confirmation.',
-    aiPluginRequirement: 'Requires AniMeido 1.7.0+',
-    aiPluginSize: 'About 1.2 MB',
-    aiPluginCaution: 'You must configure a supported AI provider and API key.',
     pluginDownload: 'Download plugin',
 
     logEyebrow: 'UPDATES',
