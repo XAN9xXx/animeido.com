@@ -48,11 +48,11 @@
                 aria-controls="download-menu"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载
                   Windows 版</span> <span class="dropdown-arrow" aria-hidden="true">&#9660;</span></button>
               <div class="dropdown-menu" id="download-menu" role="menu">
-                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Full.exe" target="_blank"
+                <a href="https://dl.animeido.com/AniMeidov2.1.0_setup_Full.exe" target="_blank"
                   rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
                     data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc"
                     data-i18n="downloadFullDesc">包含 .NET 8 与 Windows App Runtime，适合直接安装</span></a>
-                <a href="https://dl.animeido.com/AniMeidov2.0.0_setup_Lite.exe" target="_blank"
+                <a href="https://dl.animeido.com/AniMeidov2.1.0_setup_Lite.exe" target="_blank"
                   rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
                     data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc"
                     data-i18n="downloadLiteDesc">仅包含应用，需自行准备 .NET 8 与 Windows App Runtime</span></a>
@@ -156,6 +156,17 @@
         </div>
 
         <div class="log-scroll" tabindex="0">
+          <article class="release-card">
+            <div class="release-head">
+              <h3 data-i18n="v210">v2.1.0</h3>
+              <time datetime="2026-08-12" data-i18n="v210Date">2026-08-12</time>
+            </div>
+            <ul>
+              <li data-i18n="v210Item1">优先使用自建 Bangumi Archive，异常时自动回退在线 API</li>
+              <li data-i18n="v210Item2">改进封面加载、缓存与失败重试，减少空白封面</li>
+              <li data-i18n="v210Item3">修复页面切换时的重复加载和迟到数据更新</li>
+            </ul>
+          </article>
           <article class="release-card">
             <div class="release-head">
               <h3 data-i18n="v200">v2.0.0</h3>

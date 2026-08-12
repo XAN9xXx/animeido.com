@@ -53,6 +53,11 @@ const translations = {
 
     logEyebrow: 'UPDATES',
     logTitle: '更新日志',
+    v210: 'v2.1.0',
+    v210Date: '2026-08-12',
+    v210Item1: '自建部署 Bangumi Archive，改善浏览体验',
+    v210Item2: '改进封面加载、缓存与失败重试，减少空白封面',
+    v210Item3: '修复页面切换时的重复加载和迟到数据更新',
     v200: 'v2.0.0',
     v200Date: '2026-08-07',
     v200Item1: '新增今天页、观看进度、补番计划与 Windows 原生提醒',
@@ -120,6 +125,11 @@ const translations = {
 
     logEyebrow: 'UPDATES',
     logTitle: 'Changelog',
+    v210: 'v2.1.0',
+    v210Date: '2026-08-12',
+    v210Item1: 'Prefer the self-hosted Bangumi Archive and fall back to the online API on failure',
+    v210Item2: 'Improve cover loading, caching, and retry behavior to reduce blank covers',
+    v210Item3: 'Fix duplicate loading and stale updates during page navigation',
     v200: 'v2.0.0',
     v200Date: '2026-08-07',
     v200Item1: 'Add the Today page, watch progress, watch plans, and native Windows reminders',
