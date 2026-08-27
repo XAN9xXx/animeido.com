@@ -53,6 +53,10 @@ const translations = {
 
     logEyebrow: 'UPDATES',
     logTitle: '更新日志',
+    v211: 'v2.1.1',
+    v211Date: '2026-08-27',
+    v211Item1: '修复使用自建 Bangumi Archive 时部分封面因图片端口丢失而无法加载的问题',
+    v211Item2: '更新图片相关缓存版本，自动避开已缓存的错误封面地址',
     v210: 'v2.1.0',
     v210Date: '2026-08-12',
     v210Item1: '自建部署 Bangumi Archive，改善浏览体验',
@@ -125,6 +129,10 @@ const translations = {
 
     logEyebrow: 'UPDATES',
     logTitle: 'Changelog',
+    v211: 'v2.1.1',
+    v211Date: '2026-08-27',
+    v211Item1: 'Fix missing covers caused by dropping the custom image port when using the self-hosted Bangumi Archive',
+    v211Item2: 'Refresh image-related cache versions to bypass previously cached incorrect cover URLs',
     v210: 'v2.1.0',
     v210Date: '2026-08-12',
     v210Item1: 'Prefer the self-hosted Bangumi Archive and fall back to the online API on failure',

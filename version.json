@@ -1,6 +1,6 @@
 {
-    "latestVersion": "2.1.0",
-    "downloadUrl": "https://dl.animeido.com/AniMeidov2.1.0_setup_Lite.exe",
-    "releaseNotes": "AniMeido v2.1.0 更新内容\n\n- 自建部署了 Bangumi Archive，改善浏览体验。\n- 改进封面加载、缓存与失败重试，减少空白封面。\n- 修复页面切换时的重复加载和迟到数据更新。",
+    "latestVersion": "2.1.1",
+    "downloadUrl": "https://dl.animeido.com/AniMeidov2.1.1_setup_Lite.exe",
+    "releaseNotes": "AniMeido v2.1.1 更新内容\n\n- 修复使用自建 Bangumi Archive 时部分封面因图片端口丢失而无法加载的问题。\n- 更新图片相关缓存版本，自动避开已缓存的错误封面地址。",
     "minAppVersion": "1.0.0"
 }
