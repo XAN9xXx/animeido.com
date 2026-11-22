@@ -121,7 +121,6 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn:focus-visible,
-.dropdown-item:focus-visible,
 .dot:focus-visible,
 .lang-switcher:focus-visible {
   outline: 3px solid rgba(102, 167, 255, 0.9);
@@ -132,72 +131,6 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   background: linear-gradient(180deg, #377fff 0%, #1f65f2 100%);
   color: white;
   box-shadow: 0 16px 40px rgba(47, 125, 255, 0.24);
-}
-
-/* ======== 下载下拉菜单 ======== */
-.dropdown-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-trigger {
-  cursor: pointer;
-}
-
-.dropdown-arrow {
-  font-size: 10px;
-  margin-left: 4px;
-  transition: transform .2s ease;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-  right: 0;
-  z-index: 30;
-  display: none;
-  flex-direction: column;
-  border: 1px solid rgba(160, 195, 255, 0.18);
-  border-radius: 14px;
-  background: rgba(8, 14, 28, 0.96);
-  backdrop-filter: blur(12px);
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.dropdown-menu.is-open {
-  display: flex;
-}
-
-.dropdown-trigger[aria-expanded="true"] .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
-.dropdown-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 14px 18px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  transition: background .15s ease;
-  text-decoration: none;
-}
-
-.dropdown-item:hover {
-  background: rgba(47, 125, 255, 0.12);
-}
-
-.dropdown-item + .dropdown-item {
-  border-top: 1px solid rgba(160, 195, 255, 0.1);
-}
-
-.dropdown-desc {
-  font-size: 12px;
-  font-weight: 400;
-  color: var(--muted-2);
 }
 
 .btn-secondary {
@@ -393,7 +326,7 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
 
 .plugin-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 36rem);
   gap: 18px;
   margin-top: 32px;
 }
@@ -401,12 +334,18 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
 .plugin-card {
   display: flex;
   flex-direction: column;
-  min-height: 340px;
+  max-width: 36rem;
   padding: 28px;
   border: 1px solid rgba(160, 195, 255, 0.14);
   border-radius: var(--radius-xl);
   background: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
   box-shadow: 0 22px 70px rgba(0,0,0,0.24);
+}
+
+.plugin-card-paused {
+  background-image:
+    linear-gradient(to top right, transparent calc(50% - 2px), rgba(249, 65, 65, .74) calc(50% - 1px), rgba(249, 65, 65, .74) calc(50% + 1px), transparent calc(50% + 2px)),
+    linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
 }
 
 .plugin-card-head {
@@ -436,36 +375,6 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   margin: 24px 0 0;
   color: var(--muted);
   line-height: 1.7;
-}
-
-.plugin-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
-}
-.plugin-meta span {
-  padding: 6px 10px;
-  border: 1px solid rgba(160, 195, 255, 0.12);
-  border-radius: 99px;
-  background: rgba(255,255,255,0.035);
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.plugin-caution {
-  margin: 14px 0 0;
-  color: var(--muted-2);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.plugin-download {
-  align-self: flex-start;
-  min-height: 46px;
-  margin-top: auto;
-  padding: 0 20px;
-  font-size: 14px;
 }
 
 /* ======== Page Dots ======== */
@@ -670,7 +579,6 @@ img { display: block; user-select: none; -webkit-user-drag: none; }
   .plugin-grid { grid-template-columns: minmax(0, 1fr); }
   .plugin-card { min-height: 0; padding: 22px; }
   .plugin-description { min-height: 0; }
-  .plugin-download { margin-top: 24px; }
 
   .log-layout {
     height: auto;

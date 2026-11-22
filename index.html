@@ -20,7 +20,7 @@
       data-i18n-aria-label="pageHomeLabel"></button>
     <button class="dot" type="button" data-target="features" aria-label="功能一览"
       data-i18n-aria-label="pageFeaturesLabel"></button>
-    <button class="dot" type="button" data-target="plugins" aria-label="插件下载"
+    <button class="dot" type="button" data-target="plugins" aria-label="可选插件"
       data-i18n-aria-label="pagePluginsLabel"></button>
     <button class="dot" type="button" data-target="changelog" aria-label="更新日志"
       data-i18n-aria-label="pageChangelogLabel"></button>
@@ -43,21 +43,8 @@
             等工具加速下载。</p>
           <p class="hero-note hero-lang-note" data-i18n-html="heroLangNote"></p>
           <div class="hero-actions">
-            <div class="dropdown-wrapper">
-              <button class="btn btn-primary dropdown-trigger" type="button" aria-haspopup="menu" aria-expanded="false"
-                aria-controls="download-menu"><span class="btn-icon">&#9655;</span> <span data-i18n="downloadBtn">下载
-                  Windows 版</span> <span class="dropdown-arrow" aria-hidden="true">&#9660;</span></button>
-              <div class="dropdown-menu" id="download-menu" role="menu">
-                <a href="https://dl.animeido.com/AniMeidov2.1.1_setup_Full.exe" target="_blank"
-                  rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
-                    data-i18n="downloadFull">包含运行环境（推荐）</span><span class="dropdown-desc"
-                    data-i18n="downloadFullDesc">包含 .NET 8 与 Windows App Runtime，适合直接安装</span></a>
-                <a href="https://dl.animeido.com/AniMeidov2.1.1_setup_Lite.exe" target="_blank"
-                  rel="noopener noreferrer" role="menuitem" class="dropdown-item"><span
-                    data-i18n="downloadLite">不含运行环境</span><span class="dropdown-desc"
-                    data-i18n="downloadLiteDesc">仅包含应用，需自行准备 .NET 8 与 Windows App Runtime</span></a>
-              </div>
-            </div>
+            <a class="btn btn-primary" href="https://dl.animeido.com/AniMeido_setup_3.0.0.exe">
+              <span class="btn-icon" aria-hidden="true">&#8595;</span> <span data-i18n="downloadBtn">下载 Windows x64 版 · 3.0.0</span></a>
             <a href="https://github.com/XAN9xXx/AniMeido" target="_blank" rel="noopener noreferrer"
               class="btn btn-secondary"><img src="./assets/images/GitHub_Invertocat_Black_Clearspace.png" alt=""
                 class="btn-icon-img" /> <span data-i18n="githubBtn">GitHub 仓库</span></a>
@@ -119,26 +106,19 @@
         <div class="plugin-heading">
           <p class="eyebrow" data-i18n="pluginsEyebrow">EXTENSIONS</p>
           <h2 data-i18n="pluginsTitle">可选插件</h2>
-          <p data-i18n="pluginsIntro">基础安装包不包含以下插件。下载后可在 AniMeido 设置中的插件管理区域安装。</p>
+          <p data-i18n="pluginsIntro">在「设置 → 插件管理」中可以安装本地插件包。追番、档案和截图无需安装插件。</p>
         </div>
 
         <div class="plugin-grid">
-          <article class="plugin-card">
+          <article class="plugin-card plugin-card-paused">
             <div class="plugin-card-head">
               <div class="plugin-icon" aria-hidden="true">&#9655;</div>
               <div>
                 <h3 data-i18n="playerPluginTitle">在线播放器</h3>
-                <p>PlayerPlugin 0.4.6</p>
+                <p data-i18n="playerPluginStatus">3.0.0 暂停提供</p>
               </div>
             </div>
-            <p class="plugin-description" data-i18n="playerPluginDesc">提供在线剧集播放和用户导入的播放源管理。</p>
-            <div class="plugin-meta">
-              <span data-i18n="playerPluginRequirement">需要 AniMeido 1.6.0+</span>
-              <span data-i18n="playerPluginSize">约 46 MB</span>
-            </div>
-            <a class="btn btn-primary plugin-download"
-              href="https://dl.animeido.com/AniMeido.Plugin.Player-0.4.6.animeido-plugin" target="_blank"
-              rel="noopener noreferrer" data-i18n="pluginDownload">下载插件包</a>
+            <p class="plugin-description" data-i18n="playerPluginDesc">当前没有可用播放源。升级后旧播放器插件会停用，已有观看记录和播放器设置保留。</p>
           </article>
 
         </div>
@@ -156,6 +136,17 @@
         </div>
 
         <div class="log-scroll" tabindex="0">
+          <article class="release-card">
+            <div class="release-head">
+              <h3>v3.0.0</h3>
+            </div>
+            <ul>
+              <li data-i18n="v300Item1">Windows x64 改用一个安装包，不再区分 Full 和 Lite。装好后可在应用内更新。</li>
+              <li data-i18n="v300Item2">从 2.x 升级：完全退出旧版，安装并打开新版，再按提示卸载旧版。追番状态、评分、笔记和截图会保留。</li>
+              <li data-i18n="v300Item3">首次迁移旧记录时请联网，以便匹配作品。若连接中断，恢复网络后在原窗口点「重试」即可。</li>
+              <li data-i18n="v300Item5">暂停在线播放，保留观看记录；2.x 从此停止支持。</li>
+            </ul>
+          </article>
           <article class="release-card">
             <div class="release-head">
               <h3 data-i18n="v211">v2.1.1</h3>
